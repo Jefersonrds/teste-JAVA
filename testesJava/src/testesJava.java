@@ -20,12 +20,15 @@ public class testesJava {
                 
                 JOptionPane.showMessageDialog(null, "Erro de calculo: " + erro.getMessage());
                 //System.out.println("Erro de calculo: " + erro.getMessage());
-            // catch (<ClasseDaexcecao)
+            
+                
             }catch(ArrayIndexOutOfBoundsException erro){
                 //Trata os erros relacionados ao ultrapassar o tamanho do vetor
                 System.out.println("Erro de vetor: " + erro.getMessage());
-                
+
                 //Para ver a classe do erro: erro.printStackTrace();
+            }catch(Exception erro){
+                System.out.println("A aplicacao deu erro! O sistema ira finalizar a sessao");
             }
 
         }
